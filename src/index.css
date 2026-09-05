@@ -316,6 +316,84 @@ section{padding:88px 0;}
   display:inline-block; font-size:0.85rem; font-weight:700; color:var(--blue-soft);
   border-top:1px solid var(--card-border); padding-top:14px; width:100%;
 }
+.service-card-link{
+  display:inline-flex; align-items:center; gap:6px;
+  margin-top:16px; font-weight:700; font-size:0.9rem;
+  color:var(--blue-soft); transition:gap .2s ease, color .2s ease;
+}
+.service-card-link:hover{gap:10px; color:var(--ink);}
+
+/* ============ SERVICE DETAIL SECTIONS ============ */
+.service-detail{padding:88px 0; border-bottom:1px solid var(--card-border);}
+.service-detail:last-of-type{border-bottom:none;}
+.service-detail--alt{background:var(--bg-soft);}
+.service-detail-inner{
+  display:grid; gap:48px; align-items:center;
+  opacity:0; transform:translateY(18px);
+}
+.service-detail-inner.in-view{opacity:1; transform:translateY(0); transition:opacity .6s ease, transform .6s ease;}
+.service-detail-inner--alt{direction:ltr;}
+.service-detail-visual{
+  position:relative; border-radius:var(--radius); overflow:hidden;
+  aspect-ratio:4/3; background:var(--card);
+}
+.service-detail-visual img{
+  width:100%; height:100%; object-fit:cover;
+  transition:transform .5s ease;
+}
+.service-detail:hover .service-detail-visual img{transform:scale(1.05);}
+.service-detail-badge{
+  position:absolute; bottom:16px; right:16px; z-index:1;
+  background:rgba(10,14,26,0.85); backdrop-filter:blur(8px);
+  border:1px solid var(--card-border); border-radius:999px;
+  padding:10px 18px; display:flex; align-items:center; gap:10px;
+  font-weight:700; font-size:0.9rem; color:var(--blue-soft);
+}
+.service-detail-badge svg{width:18px; height:18px; flex-shrink:0;}
+.service-detail-content h2{
+  font-size:clamp(1.6rem, 4vw, 2.2rem); margin-bottom:18px; font-weight:900;
+}
+.service-detail-desc{
+  color:var(--muted); font-size:1.05rem; margin-bottom:28px; line-height:1.9;
+  max-width:65ch;
+}
+.service-detail-lists{
+  display:grid; gap:28px; grid-template-columns:1fr; margin-bottom:28px;
+}
+@media (min-width:640px){ .service-detail-lists{grid-template-columns:1fr 1fr;} }
+.service-detail-col h4{
+  font-family:'Tajawal',sans-serif; font-weight:800; font-size:1rem;
+  color:var(--blue-soft); margin-bottom:14px;
+}
+.service-detail-features,.service-detail-benefits{
+  display:flex; flex-direction:column; gap:10px;
+}
+.service-detail-features li,.service-detail-benefits li{
+  position:relative; padding-right:28px; color:var(--muted); font-size:0.95rem;
+}
+.service-detail-features li::before,.service-detail-benefits li::before{
+  content:''; position:absolute; right:0; top:8px;
+  width:16px; height:16px; border-radius:50%;
+  background:rgba(46,107,255,0.15); border:2px solid var(--blue-soft);
+}
+.service-detail-benefits li::before{
+  background:rgba(37,211,102,0.15); border-color:#25D366;
+}
+.service-detail-market{
+  display:flex; align-items:flex-start; gap:12px;
+  background:rgba(46,107,255,0.08); border:1px solid rgba(46,107,255,0.2);
+  border-radius:14px; padding:16px 20px; margin-bottom:28px;
+  color:var(--muted); font-size:0.95rem;
+}
+.service-detail-market svg{
+  width:20px; height:20px; flex-shrink:0; color:var(--blue-soft); margin-top:2px;
+}
+
+@media (min-width:960px){
+  .service-detail-inner{grid-template-columns:1fr 1fr; gap:56px;}
+  .service-detail-inner--alt .service-detail-visual{order:2;}
+  .service-detail-inner--alt .service-detail-content{order:1;}
+}
 
 /* ============ WORK / PORTFOLIO ============ */
 .work{background:var(--bg-soft); border-top:1px solid var(--card-border); border-bottom:1px solid var(--card-border);}

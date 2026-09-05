@@ -2,6 +2,7 @@ import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import Stats from './components/Stats.jsx';
 import Services from './components/Services.jsx';
+import ServiceDetails from './components/ServiceDetails.jsx';
 import Work from './components/Work.jsx';
 import Process from './components/Process.jsx';
 import WhyUs from './components/WhyUs.jsx';
@@ -22,6 +23,7 @@ export default function App() {
         <Hero />
         <Stats />
         <Services />
+        <ServiceDetails />
         <Work />
         <Process />
         <WhyUs />
