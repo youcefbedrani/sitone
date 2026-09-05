@@ -6,7 +6,6 @@ import Work from './components/Work.jsx';
 import Process from './components/Process.jsx';
 import WhyUs from './components/WhyUs.jsx';
 import Testimonials from './components/Testimonials.jsx';
-import Pricing from './components/Pricing.jsx';
 import FAQ from './components/FAQ.jsx';
 import Contact from './components/Contact.jsx';
 import CTA from './components/CTA.jsx';
@@ -27,7 +26,6 @@ export default function App() {
         <Process />
         <WhyUs />
         <Testimonials />
-        <Pricing />
         <FAQ />
         <Contact />
         <CTA />

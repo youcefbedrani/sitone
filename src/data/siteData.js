@@ -1,12 +1,11 @@
 // WhatsApp number — replace with your real number (international format, no +, no spaces)
-export const WHATSAPP_NUMBER = '213000000000';
+export const WHATSAPP_NUMBER = '218941000236';
 
 export const WHATSAPP_LINK = (text) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 
 export const NAV_LINKS = [
   { href: '#services', label: 'خدماتنا' },
   { href: '#work', label: 'أعمالنا' },
-  { href: '#pricing', label: 'الباقات' },
   { href: '#testimonials', label: 'آراء العملاء' },
   { href: '#faq', label: 'الأسئلة الشائعة' },
   { href: '#contact', label: 'تواصل معنا' }
@@ -72,28 +71,31 @@ export const SERVICES = [
 
 export const WORK = [
   {
-    badge: 'متجر إلكتروني',
-    title: 'متجر أزياء — الجزائر',
-    desc: 'متجر إلكتروني متكامل مع الدفع عند الاستلام وإدارة المخزون.',
-    result: '+150%',
-    resultLabel: 'زيادة في المبيعات خلال 3 أشهر',
-    visualClass: 'work-visual-1'
+    badge: 'تطوير موقع إلكتروني',
+    title: 'منصة تعليمية — الجزائر',
+    desc: 'موقع تعليمي متكامل يدور على WordPress مع نظام تسجيل دخول وبث مباشر.',
+    result: '+200%',
+    resultLabel: 'زيادة في عدد الطلاب المسجلين',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop',
+    tags: ['WordPress', 'React', 'SEO']
   },
   {
-    badge: 'نظام ERP',
-    title: 'شركة توزيع — وهران',
-    desc: 'نظام ERP يدير المخزون، الفواتير، والموردين في منصة واحدة.',
-    result: '-60%',
-    resultLabel: 'وقت إدارة المخزون اليومي',
-    visualClass: 'work-visual-2'
+    badge: 'تطبيق موبايل',
+    title: 'تطبيق توصيل طلبات — الجزائر',
+    desc: 'تطبيق Android وiOS مع لوحة تحكم للسائقين وتتبع الطلبات في الوقت الفعلي.',
+    result: '+350%',
+    resultLabel: 'زيادة في طلبات التوصيل اليومية',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop',
+    tags: ['Flutter', 'Firebase', 'Laravel']
   },
   {
-    badge: 'موقع شركة',
-    title: 'مكتب محاماة — الجزائر العاصمة',
-    desc: 'موقع احترافي يعرض الخدمات ويسهل حجز الاستشارات.',
-    result: '+80%',
-    resultLabel: 'زيادة في طلبات الاستشارة',
-    visualClass: 'work-visual-3'
+    badge: 'حملة تسويقية',
+    title: 'علامة تجارية — الجزائر',
+    desc: 'إدارة حملات فيسبوك وإنستغرام مع تصميم المحتوى وتحليل النتائج.',
+    result: '-40%',
+    resultLabel: 'انخفاض في تكلفة العميل',
+    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=500&fit=crop',
+    tags: ['Meta Ads', 'Design', 'Analytics']
   }
 ];
 
@@ -115,36 +117,6 @@ export const TESTIMONIALS = [
   { quote: '"تعاملت مع أكثر من وكالة قبلهم، لكن OnTime أول فريق فهم فكرتي فعلاً. الموقع اللي بنوه ضاعف طلباتي خلال شهرين."', avatar: 'م', name: 'محمد ب.', role: 'صاحب متجر إلكتروني — الجزائر' },
   { quote: '"نظام الـ ERP اللي طوروه لنا غيّر طريقة شغلنا بالكامل. كنا نضيع ساعات في الإكسل، الآن كل شيء في مكان واحد."', avatar: 'س', name: 'سارة ل.', role: 'مديرة شركة توزيع — وهران' },
   { quote: '"أكثر شيء عجبني هو الشفافية. كل مرحلة كان عندي تقرير واضح، والتسليم كان في الوقت المحدد بالضبط."', avatar: 'أ', name: 'أمين ر.', role: 'مؤسس شركة ناشئة — الجزائر العاصمة' }
-];
-
-export const PRICING = [
-  {
-    name: 'انطلاقة',
-    desc: 'مثالية للأعمال الصغيرة التي تحتاج حضوراً رقمياً احترافياً.',
-    price: 'من 45,000',
-    features: ['موقع تعريفي حتى 5 صفحات', 'تصميم متجاوب مع الجوال', 'ربط واتساب ونماذج تواصل', 'تحسين أساسي لمحركات البحث SEO', 'تسليم خلال 10 أيام'],
-    cta: 'اطلب الباقة',
-    featured: false,
-    waText: 'مرحباً، أريد الاستفسار عن باقة انطلاقة'
-  },
-  {
-    name: 'نمو',
-    desc: 'للأعمال الجاهزة للنمو — موقع + متجر + تسويق.',
-    price: 'من 120,000',
-    features: ['موقع + متجر إلكتروني كامل', 'نظام دفع وإدارة مخزون', 'إدارة حملات إعلانية (شهر واحد)', 'تحسين متقدم SEO', 'دعم فني 3 أشهر', 'تسليم خلال 21 يوم'],
-    cta: 'اطلب الباقة',
-    featured: true,
-    waText: 'مرحباً، أريد الاستفسار عن باقة نمو'
-  },
-  {
-    name: 'توسع',
-    desc: 'للشركات التي تحتاج أنظمة متكاملة وحلول مخصصة.',
-    price: 'حسب المشروع',
-    features: ['أنظمة ERP أو CRM مخصصة', 'تطبيقات موبايل أو سطح مكتب', 'أتمتة بالذكاء الاصطناعي', 'تكامل مع الأنظمة الحالية', 'دعم فني أولوية 24/7'],
-    cta: 'ناقش مشروعك',
-    featured: false,
-    waText: 'مرحباً، أريد مناقشة مشروع مخصص مع فريق OnTime'
-  }
 ];
 
 export const FAQS = [

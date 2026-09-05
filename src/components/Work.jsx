@@ -5,12 +5,16 @@ function WorkCard({ item }) {
   const ref = useReveal();
   return (
     <article className="work-card" ref={ref}>
-      <div className={`work-visual ${item.visualClass}`}>
+      <div className="work-visual">
+        <img src={item.image} alt={item.title} loading="lazy" />
         <span className="work-badge">{item.badge}</span>
       </div>
       <div className="work-body">
         <h3>{item.title}</h3>
         <p>{item.desc}</p>
+        <div className="work-tags">
+          {item.tags.map(tag => <span key={tag} className="work-tag">{tag}</span>)}
+        </div>
         <div className="work-result">
           <span className="result-badge">{item.result}</span>
           <span>{item.resultLabel}</span>

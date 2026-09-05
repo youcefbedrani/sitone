@@ -41,8 +41,8 @@ export default function Contact() {
                 <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg>
               </span>
               <div>
-                <strong>نخدم كل الجزائر</strong>
-                <span>وعملاء حول العالم عن بعد</span>
+                <strong>السراج ~ جزيرة المشتل</strong>
+                <span>مقابل ثانوية فالوجا للبنات</span>
               </div>
             </div>
             <div className="contact-point">

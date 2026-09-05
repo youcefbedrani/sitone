@@ -15,6 +15,7 @@ export default function Footer() {
           <span className="brand-text">OnTime <em>Digital</em></span>
         </a>
         <p className="footer-tag">حلول رقمية متكاملة — من الفكرة إلى الإطلاق</p>
+        <p className="footer-location">السراج ~ جزيرة المشتل مقابل ثانوية فالوجا للبنات</p>
         <div className="footer-links">
           <a href="#services">خدماتنا</a>
           <a href="#work">أعمالنا</a>
